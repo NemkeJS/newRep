@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<meta charset ="UTF-8">
+<head>
+    
+<!-- Latest compiled and minified CSS -->
+    
+<link rel="stylesheet" type="text/css" href="2016.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">    
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="smart.js"></script>   
+    
+</head>
+<style>
+body {
+ margin: 0;
+padding: 0;
+width: 100%;    
+}
+   
+header {
+    
+ width: 100%;
+    height: 80px;
+    background: black;
+    position: fixed;
+    top: 0px;
+    display: none;
+    z-index: 9999 !important;
+    
+}
+    
+.active-header {
+    
+ display: block !Important;
+}
+h1 {
+    
+text-align: center;
+color:brown;
+    
+}
+    
+#vuki {
+ font-size: 4em;
+ padding-top:4em 
+     
+}
+p{
+ text-align: center;
+}
+    
+#vukson-button {
+ width: 10%;
+    background: black;
+    color: white;
+    margin-top: 4em;
+    
+}
+    
+    
+    
+.active  {
+ color:white !Important;   
+}
+    
+#full-width{
+ margin-top: -50px;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=45bd30e23c10573d8084359be2e91847');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+    
+}
+    
+    
+#full-width2,#full-width3,#full-width4{
+ margin-top: -50px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+    }    
+
+#full-filter {
+height: 100vh;
+    background: rgba(0, 0, 0, 0.66);
+    text-align: center;
+}
+    
+#top-menu-nav ul li {
+ display: inline-block;   
+    color: white;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 2%;
+    float: right;
+    font-size: 2em;
+}
+    
+    
+#logo img {
+ width: 5%;
+    float: left;
+    margin-top: -1%;   
+    
+}
+    
+.col-md-3 img {
+    
+     width: 109%;
+    height: 73vh;   
+    
+}
+    
+#kara {
+    height: 100vh;
+}
+    
+#kara .row {
+    
+ height: 100vh;   
+}
+
+@keyframes topBottom {
+ from {
+   margin-top: -40%;
+}
+ to {
+   margin-top: -10%;
+     
+   }
+}
+
+@keyframes bottomTop {
+ from {
+   margin-top: -10%;
+}
+ to {
+   margin-top: -40%;
+     
+   }
+ }
+
+.animateTop {
+  
+ animation: topBottom 4s ease; 
+}
+
+.animateBottom {
+ animation: bottomTop 4s ease; 
+}        
+    
+.none{
+    
+ display: none !Importan;   
+}
+    
+#opacity-king {
+ width: 55%;
+    margin-top: -40%;
+    opacity: 0.2;   
+}    
+.col-md-6{
+    height: 100vh;
+    background-image: url('http://i.ytimg.com/vi/5ggxSvN1ztY/maxresdefault.jpg')
+    height: 100vh;
+    background-image: url('http://i.ytimg.com/vi/5ggxSvN1ztY/maxresdefault.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75%;
+    background-size: 100vh;
+    opacity: .4;
+    transform: rotate(100deg);
+    transition: 1s all ease;
+}
+
+.col-md-6:hover{    
+ opacity: 1;
+    transform: rotate(0deg);
+    
+    
+}
+.col-md-6 h1 {
+ color: #FFF;
+    padding-top: 54%;
+    font-size: 10em;   
+    
+}
+ #car {   
+ width: 220px;
+    height: 170px;
+    margin: 10px 50px 10px 10px;
+    background: yellow;
+    border: 2px groove;
+    float: right;
+  }
+  #carski {
+    margin: 0;
+    margin-left: 10px;
+    color: red;
+    width: 220px;
+    height: 120px;
+    padding-top: 70px;
+    float: left;
+    font-size: 14px;
+  }
+  #carski2 {
+    display: block;
+  }    
+    
+    
+.looping {
+    height: 40vh;
+    background-color: black;
+    display: none;
+}
+
+    
+
+    
+</style>
+    
+    
+<body>
+<header id="header-top">
+<nav>
+<div id="logo">
+    
+<img src="http://preduzetnistvo.com/wp-content/uploads/2015/11/Drawing-11.png"/>  
+</div>    
+<div id="top-menu-nav">
+<ul>
+<li>Home</li>    
+<li>About us</li>    
+<li>Contact</li>    
+<li>Login</li>    
+    
+</ul>        
+</div>    
+</nav>        
+</header>        
+    
+<div id="full-width">  
+<div id="full-filter">    
+<h1 class="active" id="vuki">VUKI DANS UCI HTML</h1>
+    <img id="opacity-king" src="http://images.vectorhq.com/images/previews/8bc/lion-head-psd-414289.png"/>    
+
+    <p><button class="acitve" id="vukson-button">Hide</button></p>
+    </div>
+    </div>
+    
+    
+<div class="container-fluid">
+  <div class="row">
+<div class= "col-md-3">
+<img src="https://images.unsplash.com/1/type-away-numero-dos.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=93ace5960cf6a5f05c4805589e65ce7c"/>
+      <h1> Vuki danas jebe keve</h1>
+      </div>    
+      <div class= "col-md-3">
+<img src="https://images.unsplash.com/1/type-away-numero-dos.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=93ace5960cf6a5f05c4805589e65ce7c"/>
+
+      <h1> Vuki danas jebe keve</h1>    
+      </div>
+<div class= "col-md-3">
+    <img src="https://images.unsplash.com/1/type-away-numero-dos.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=93ace5960cf6a5f05c4805589e65ce7c"/>
+
+
+      <h1> Vuki danas jebe keve</h1> 
+      </div>    
+<div class= "col-md-3">
+    <img src="https://images.unsplash.com/1/type-away-numero-dos.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=93ace5960cf6a5f05c4805589e65ce7c"/>
+
+
+      <h1> Vuki danas jebe keve</h1>  
+      </div>
+  </div>
+</div>
+
+    </div>
+    
+       
+<div id="kara"class="container-fluid">
+<div class="row">
+<div class= "col-md-6">
+    <h1 style="color:#FFF"><span style="color:yellow">6</span><span style="color:brown">6</span><span style="color:red">6</span></h1>    
+    </div>     
+    
+    <div class= "col-md-6">
+    <h1 style="color:#FFF"><span style="color:yellow">6</span><span id="span2" style="color:white">6</span><span style="color:green">6</span></h1>    
+    
+    
+    </div>     
+<h1>VUKI 666</h1>
+</div>
+    
+    </div>
+    
+    
+<h1>Vuki je car afjaskjaskljsaklgjaslgklasj</h1>
+    
+    
+<h2 id="nebitan">Nemke i vukson</h2>
+    
+    <h2 id="vezba" class="nemke vuki nera"><s>Nemke VUki Nera</s></h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+<h2 id="vezba" class="nemke vuki nera">Nemke VUki Nera</h2>    
+    
+    
+    
+<h1>akslfjaslflkas</h1>    
+<h2>asjashgjkasga</h2>    
+<h3>ajkhajkshgjkas</h3>
+<h4>aklhgasjhgjkashgjas</h4>
+<h5>alkghlashgjakshga</h5>  
+<h6>akghajkshgas</h6>  
+<p>alshgajkshgjkashgjksa</p> 
+    
+<div id="loop1" class= "col-md-3 looping">
+    </div> 
+    <div id="loop2" class= "col-md-3 looping">
+    </div> 
+    <div id="loop3" class= "col-md-3 looping">
+    </div> 
+    <div id="loop4" class= "col-md-3 looping">
+    </div> 
+    <div id="loop5" class= "col-md-3 looping">
+    </div> 
+    <div id="loop6" class= "col-md-3 looping">
+    </div> 
+    <div id="loop7" class= "col-md-3 looping">
+    </div> 
+<button id="looping">Loop</button> 
+    
+<input  type="text" ></in>   
+<input  type="text" ></in>   
+<button id="inputButt" type="submit" ></but> 
+<div id="nemke-car"></div>
+</body>
+<script>
+    
+$( window ).load(function() {
+    
+$(function() {
+    
+$('#opacity-king').css({'position': 'absolute'});    
+$('#looping').click(function() {  
+    
+var counter = new Array();
+counter[0] = $('#loop1');
+counter[1] = $('#loop2');
+counter[2] = $('#loop3');
+counter[3] = $('#loop4');
+counter[4] = $('#loop5');
+counter[5] = $('#loop6');
+counter[6] = $('#loop7');
+for(i = 0 ; i< counter.length ; i++) {
+document.write(counter[i] + "<br >");
+}
+});
+$('#vukson-button').on('click', function() {
+   $('#vuki').fadeToggle(); 
+    
+});
+    
+$(document).scroll(function() {
+   var y = $(this).scrollTop();
+    if(y > 30 ) {
+$('#opacity-king').addClass('animateTop');
+    }
+    else {
+     $('#opacity-king').removeClass('animateTop').addClass('animateBottom');   
+        
+    }
+    
+
+});
+    
+    
+$('#vezba').hover(function() {
+    
+$(this).hide('<s></s>');
+});
+    
+var myModule =  {
+  name: "Nemanja",
+  age: 12,
+  sayName: function (){
+},
+setName: function(newName) {
+    this.name = newName;
+}
+};
+myModule.setName('Nemke');
+myModule.sayName();
+    
+});
+ 
+    
+ var nemke = function() {
+ var a = 2;
+ var b = 4
+ var c = a/b;
+if(!(c === NaN)) {
+console.log("Nemke1");
+}
+else {
+    console.log("Nemke2");
+                }
+}
+
+nemke();
+
+
+/*$( "#full-width" ).mousemove(function( event ) {
+  var pageCoords = "( " + event.pageX + ", " + event.pageY + " )";
+  var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
+    $('#opacity-king').animate({
+    width: "70%",
+    opacity: 0.4,
+    marginLeft: "0.6in",
+    fontSize: "3em",
+    borderWidth: "10px",
+    marignLeft:"toggle"    
+  }, 1500 );
+  $( "span:first" ).text( "( event.pageX, event.pageY ) : " + pageCoords );
+  $( "span:last" ).text( "( event.clientX, event.clientY ) : " + clientCoords );
+ */
+/*    
+$("#opacity-king").bind('mousemove', function(e){
+ 
+$(this).css({marginLeft: e.pageY + '-2px' });
+});      
+
+$.easing.smoothmove = function (x, t, b, c, d) {
+return true;
+    }; 
+
+$("#opacity-king").bind('mousemove', function(e){
+
+$(this).animate({
+  'marginLeft': e.pageX,
+  'marginRight': e.pageY
+}, {queue:true,duration:2000,easing:'smoothmove'});
+
+}); 
+*/    
+var $container = $('#full-filter');
+var contWidth = $container.width();
+var conntHeight = $container.height();    
+var $point = $('#opacity-king');
+var delay = 100;
+var decay = .1;
+
+var intervalId;
+var mouseX, mouseY;
+
+//this function is called 30 times per second.
+function ticker(){
+     $point.each(function(){
+         if( mouseX > (contWidth - $point.width())){
+             mouseX = (contWidth - $point.width()); //instead of returning, just set the value to the max
+         }
+         else if (mouseY > (conntHeight - $point.width())) {
+                  mouseY = (conntHeight - $point.width());        
+         }
+         
+         var xp = $(this).position().left;
+         xp += parseFloat((mouseX - xp) * decay); //using a decay variable for easier tweaking
+         $(this).css({
+            left: xp
+         });
+         
+          var yp = $(this).position().top;
+         yp += parseFloat((mouseY - yp) *decay);
+         
+         $(this).css({
+           top:yp  
+         })
+     });
+}
+
+//this interval calls the ticker function every 33 milliseconds
+intervalId = setInterval(ticker, 43); //33 millisecond is about 30 fps  (16 would be roughly 60fps)
+
+$container.mousemove(function(e){
+    mouseX = e.offsetX; //store the current mouse position so we can reference it during the interval
+    mouseY = e.offsetY;
+});
+    
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+$('#full-width').append("<h1>Nemke</h1>");
+    
+    }
+}); 
+    
+    
+(function() {
+var array = [];
+var duka = "Nemke";
+    
+array.push(duka);
+    
+console.log(array);    
+    
+    
+for(var i  = 0;  i< array.length; i++) {
+    
+ console.log(array[i]);   
+}
+})()
+    
+});
+</script>    
+    
+</html>
