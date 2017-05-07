@@ -1,0 +1,40 @@
+
+
+
+
+
+$(function()) {
+var mainObj = {
+init: function]() {
+make.reneder();
+make.init();
+make.bindEvents();
+make.forceThePass();
+make.getData():
+make.makeTheRender();
+}
+
+// make the maain obj
+ 
+milena: function(api1, api2, api3) {
+
+
+
+},
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+mainObj.init();
+
+});
