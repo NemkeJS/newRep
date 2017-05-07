@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+
+body {
+	background:#eee;
+	font-family:  'Concert One', cursive;
+}
+
+
+
+
+.preloader {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fcf0e3;
+    text-align: center;
+    line-height: 100vh;
+    transition: 1s all ease;
+    z-index: 999999 !important
+}
+
+.active-preolader {
+	transform: translateY(-100%);
+	    transition: 1s all ease;
+}
+
+header  {
+    position: fixed;
+    width: 100%;
+    padding-right: 40px;
+    padding-top: 10px;
+    z-index: 99;
+    	    transition: 1s all ease;
+
+}
+
+#glavna-maca {
+	height: 80vh;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/90/1f/c5/901fc5577a43faaac13eb6275b76f49a--gray-kitten-gray-cats.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    box-shadow: 4px 4px 14px;
+        transition: 1s all ease;
+    margin-bottom: 150px;    
+
+   }
+
+.crazy-active {
+height: 100vh !important;
+    transition: 1s all ease;
+    background-image: url('http://a.abcnews.com/images/Lifestyle/AL_scared_cat_jt_151225_16x9_992.jpg') !important;
+
+
+}
+   #glavna-maca:before {
+    content: "";
+    width: 150px;
+    height: 90px;
+    position: absolute;
+    bottom: -90px;
+    background: #c53333;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    transform: skew(60deg);
+    box-shadow: 4px 4px 14px #9f948f;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate; 
+
+}
+
+  #glavna-maca:after {
+    content: "";
+    width: 150px;
+    height: 90px;
+    position: absolute;
+    bottom: -90px;
+    background: #c53333;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    transform: skew(-15deg);
+    box-shadow: 4px 4px 14px black;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate; 
+
+}
+
+
+@keyframes bounce {
+  from {
+    bottom: -90px;
+  }
+  to {
+  	    bottom: -80px;
+
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    background: #c53333;
+    cursor: pointer;
+}
+
+#luda-maca {
+height: 100%;
+background:transparent;
+opacity: 0.3;
+}
+
+.stop-back {
+background: transparent !important;	
+}
+
+.placeholder,.placeholder2 {
+color: black;
+    z-index: 99999;
+    width: 20%;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.placeholder2 {
+	display: none;
+}
+
+.placeholder h1 span {
+    font-size: 60px;
+    color: #ec0000;
+}
+
+.placeholder2 h1 span {
+    font-size: 60px;
+    color: #ec0000;
+}
+
+#ostatak-price {
+	display: none;
+}
+
+.prica-o-maci div {
+margin-bottom: 40px;
+height: 45vh;
+}
+
+
+
+.slika-mace {
+position: relative;
+}
+
+.slika-mace img {
+width: 100%;
+}
+
+.zaljubiska-miska {
+	height: 100vh !important;
+	transition: 1s all ease;
+	background-image: url('http://www.twitrcovers.com/wp-content/uploads/2014/02/Cute-Kittens-l.jpg') !important;
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    box-shadow: 4px 4px 14px;
+        transition: 1s all ease;
+    margin-bottom: 150px;    
+}
+
+header button {
+    float: right;
+    margin-right: 50px;
+    width: 200px;
+    height: 5vh;
+    background: #c53333;
+    border: none;
+    color: white;
+    display: none;
+}
+
+#macise-video {
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    top:30%;
+    animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate; 
+}
+
+.ang {
+    height: 50vh;
+    text-align: center;
+    line-height: 50vh;
+}
